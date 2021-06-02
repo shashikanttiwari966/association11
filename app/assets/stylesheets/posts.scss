@@ -1,0 +1,60 @@
+
+*{
+	font-family:system-ui;
+}
+.index ul li{
+	    padding: 20px 60px;
+    list-style-position: inside;
+    background: #cdcde2;
+    border-radius:5px;
+}
+
+ul {
+   list-style: none;
+}
+
+ul li:before {
+   content: "#";
+   font-size: 170%; /* or whatever */
+   padding-right: 5px;
+}
+.link{
+	font-size:20px;
+}
+.show p{
+	font-size:60px;
+	background: #cdcde2;
+	padding: 20px 60px;
+	width:40%;
+	text-transform:capitalize;
+}
+.login{
+	background: #cdcde2;
+	padding: 20px 60px;
+	width:40%;
+	border-radius:5px;
+}
+.login input[type='text']{
+	padding:3px 10px;
+	font-size:20px;
+	border-radius:5px;
+	width:40%;
+}
+.login h1{
+	padding-bottom: 40px;
+}
+.login button{
+	padding:3px 10px;
+	font-size:20px;
+	border-radius:5px;
+}
+.show_posts ul{
+	padding: 0px;
+    width: 49%;
+}
+.show_posts ul li{
+	padding: 20px 60px;
+    list-style-position: inside;
+    background: #cdcde2;
+    border-radius:5px;
+}

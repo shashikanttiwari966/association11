@@ -1,0 +1,12 @@
+<h1>Posts#index</h1>
+<div class="index">
+	<div class="link">
+	<%= link_to 'new posts & singUp', users_login_path %>
+	</div>
+<ul>
+<% @posts.each do |p| %>
+	<li><%= p.post %><br><br>
+	 <%= link_to "who's Write ? ", user_path(p.user_id) %><br></li><br>
+<% end %>
+</ul>
+</div>

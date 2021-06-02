@@ -1,0 +1,26 @@
+<h1>Welcome <%= @user.name %></h1>
+
+<h2>Posts#new</h2>
+<div class="new">
+<%= form_for @post do |f| %>
+
+	<%= f.hidden_field :user_id ,value: @user.id %>
+
+	<%= f.label 'post' %><br>
+	<%= f.text_area :post %><br><br>
+
+	<%= f.submit %>
+
+<% end %>	
+</div>
+
+<div class="show_posts">
+	<h2> Posts </h2>
+	<ul>
+	<% @posts.each do |p| %>
+		<li><%= p.post %><br><br>
+	 	<%= link_to "delete ", post_path(p.id), method: :delete, data: {confirm: "are you sure ?"} %><br></li><br>
+	<% end %>
+	</ul>
+</div>
+</div>
